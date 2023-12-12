@@ -59,11 +59,15 @@ input {
     border: 1px solid var(--pale-blue);
     color: var(--gray);
     margin: 1rem 0;
+
+}
+
+.input {
     min-width: 60%;
 }
 
 input .invalid:focus {
-    border: 1px solid var(--light-red);
+    border: 5px solid var(--light-red);
 }
 
 ::placeholder {
