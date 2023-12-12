@@ -1,0 +1,158 @@
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --dark-blue: hsl(209, 33%, 12%);
+    --bold: 700;
+    --light: 300;
+    --semi-bold: 600;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    font-weight: var(--light);
+}
+
+body {
+    box-sizing: border-box;
+    padding: 2rem;
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+header img {
+    margin: 3rem auto;
+    display: block;
+}
+
+header {
+    margin: 0 0 3rem;
+}
+
+h1 {
+    font-weight: var(--light);
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--gray);
+}
+
+.bold {
+    font-weight: var(--bold);
+    color: var(--dark-blue);
+}
+
+header p {
+    font-size: .6rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+label {
+    display: none;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: 1px solid var(--pale-blue);
+    color: var(--gray);
+    margin: 1rem 0;
+    min-width: 60%;
+}
+
+input .invalid:focus {
+    border: 1px solid var(--light-red);
+}
+
+::placeholder {
+    color: var(--pale-blue);
+}
+
+.invalid-feedback {
+    color: var(--light-red);
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem .5rem;
+    border-radius: 3rem;
+    background-color: var(--blue);
+    color: white;
+    font-weight: var(--bold);
+    /* filter: drop-shadow(.2rem .2rem 0.75rem var(--pale-blue)); */
+}
+
+button:hover {
+    background-color: var(--dark-blue);
+    transition: 0.2s;
+}
+
+main img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    /* position: absolute; */
+    bottom: 0;
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 10rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links i {
+    border: 1px solid var(--blue);
+    height: 3vh;
+    width: 3vh;
+    border-radius: 100%;
+    color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links i:hover {
+    background-color: var(--blue);
+    color: white;
+    transition: 0.2s;
+}
+
+footer p {
+    font-size: 0.6rem;
+    color: var(--gray);
+    text-align: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--blue);
+}
+
+
+@media screen and (min-width:1440px) {
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+}
