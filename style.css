@@ -66,7 +66,8 @@ input {
     min-width: 60%;
 }
 
-input .invalid:focus {
+input .invalid:focus,
+input .empty:focus {
     border: 5px solid var(--light-red);
 }
 
@@ -74,7 +75,8 @@ input .invalid:focus {
     color: var(--pale-blue);
 }
 
-.invalid-feedback {
+.invalid-feedback,
+.empty {
     color: var(--light-red);
     text-align: center;
     font-size: 0.6rem;
