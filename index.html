@@ -29,12 +29,15 @@
 
     <form action="" method="post" name="form1">
       <div class="input">
-        <label for="email">Your email address</label>
-        <input type="email" name="email" id="email" placeholder="Your email address...">
+        <div class="input-and-button">
+          <label for="email">Your email address</label>
+          <input type="email" name="email" id="email" placeholder="Your email address...">
+          <button name="validate" value="Validate" id="submit">Notify Me</button>
+        </div>
         <div class="invalid-feedback hidden">Please provide a valid email address</div>
         <div class="empty hidden">Whoops! It looks like you forgot to add your email</div>
       </div>
-      <button name="validate" value="Validate" id="submit">Notify Me</button>
+
     </form>
 
   </header>

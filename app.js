@@ -20,6 +20,7 @@ const validateEmail = (e) => {
             return false;
         }
     } else {
+        invalidText.classList.add('hidden');
         emptyText.classList.remove('hidden');
     }
 

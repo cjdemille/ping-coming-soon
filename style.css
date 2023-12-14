@@ -161,4 +161,18 @@ footer p {
         align-items: stretch;
     }
 
+    .input {
+        width: 100%;
+    }
+
+    .input-and-button {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #email {
+        width: 200%;
+    }
+
 }
