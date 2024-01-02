@@ -83,7 +83,7 @@ input .empty:focus {
 }
 
 .hidden {
-    display: none;
+    color: transparent;
 }
 
 button {
